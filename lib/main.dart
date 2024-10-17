@@ -2,7 +2,8 @@ import 'dart:ui';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:news_app/home_screen.dart';
+import 'package:news_app/views/category_view.dart';
+import 'package:news_app/views/home_view.dart';
 import 'package:news_app/services/news_services.dart';
 void main(){
   // NewsServices(dio: Dio()).getGeneralNews();
@@ -19,11 +20,12 @@ class MyApp extends StatelessWidget {
       dragDevices: {PointerDeviceKind.mouse},
     ),
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'News App',
       routes: {
-        HomeScreen.routeName: (_) => HomeScreen(),
+        HomeView.routeName: (_) => HomeView(),
+        CategoryView.routename: (_) => CategoryView(),
       },
-      initialRoute: HomeScreen.routeName,
+      initialRoute: HomeView.routeName,
     );
   }
 }
