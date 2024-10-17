@@ -3,7 +3,7 @@ import 'category_card.dart';
 
 class CategoriesList extends StatelessWidget {
   CategoriesList({super.key});
-  List<CategoryModel> categories=[
+  final List<CategoryModel> categories=[
     CategoryModel(categoryName: "entertainment",image: "entertainment.jpg"),
     CategoryModel(categoryName: "business",image: "business.jpg"),
     CategoryModel(categoryName: "sports",image: "sports.jpg"),

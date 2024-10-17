@@ -1,12 +1,9 @@
 import 'dart:ui';
 
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/views/category_view.dart';
 import 'package:news_app/views/home_view.dart';
-import 'package:news_app/services/news_services.dart';
 void main(){
-  // NewsServices(dio: Dio()).getGeneralNews();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -22,8 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'News App',
       routes: {
-        HomeView.routeName: (_) => HomeView(),
-        CategoryView.routename: (_) => CategoryView(),
+        HomeView.routeName: (_) => const HomeView(),
+        CategoryView.routeName: (_) => const CategoryView(),
       },
       initialRoute: HomeView.routeName,
     );

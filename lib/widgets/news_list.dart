@@ -4,8 +4,8 @@ import '../models/article_model.dart';
 import 'news_card.dart';
 
 class NewsList extends StatelessWidget {
-  List<ArticleModel> list;
-  NewsList({super.key,required this.list});
+  final List<ArticleModel> list;
+  const NewsList({super.key,required this.list});
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +13,6 @@ class NewsList extends StatelessWidget {
       delegate: SliverChildBuilderDelegate((context, index) {
         return NewsCard(title: list[index].title,image: list[index].image,subTitle: list[index].subTitle);
       },childCount: list.length),
-    );;
+    );
   }
 }

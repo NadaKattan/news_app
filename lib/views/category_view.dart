@@ -5,7 +5,7 @@ import '../widgets/news_list_view_builder.dart';
 
 class CategoryView extends StatelessWidget {
   const CategoryView({super.key});
-  static const String routename='/category';
+  static const String routeName='/category';
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class CategoryView extends StatelessWidget {
         body: Padding(
       padding: const EdgeInsets.all(16),
       child: CustomScrollView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         slivers: [
           NewsListViewBuilder(args.categoryName),
         ],
