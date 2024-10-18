@@ -27,7 +27,9 @@ class CategoryCard extends StatelessWidget {
           // color: Colors.amber,
           borderRadius: BorderRadius.circular(20),
         ),
-        child: Center(child: Text(categoryName,style: const TextStyle(color: Colors.white),),),
+        // child: Padding(
+        //   padding: EdgeInsetsDirectional.only(start: 10),
+        //     child: Text(categoryName,style:TextStyle(color: Colors.white))),
       ),
     );
   }

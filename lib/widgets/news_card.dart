@@ -16,7 +16,7 @@ class NewsCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-            Image.network(image??'https://media.istockphoto.com/id/1529820791/photo/asian-multi-ethnic-business-people-talk-during-a-coffee-break-in-seminar-business-conference.jpg?s=1024x1024&w=is&k=20&c=A8X3saa2zQiJQjcCJCYKwYEuLDovjO0J7WDwnGwAlVw=',fit: BoxFit.fill,),
+            Image.network(image??'https://as2.ftcdn.net/v2/jpg/03/15/18/09/1000_F_315180932_rhiXFrJN27zXCCdrgx8V5GWbLd9zTHHA.jpg',fit: BoxFit.fill,),
               // image!=null?Image.network(image!,fit: BoxFit.fill,):Container(),
         Text(title,maxLines: 2,overflow: TextOverflow.ellipsis,style: const TextStyle(fontSize:18,fontWeight: FontWeight.bold),),
         Text(subTitle??""),
